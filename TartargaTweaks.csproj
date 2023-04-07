@@ -15,16 +15,10 @@
 		<RootNamespace>TartargaTweaks</RootNamespace>
 		<PackageId>TartargaTweaks</PackageId>
 		<Product>TartargaTweaks</Product>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
-		<OutputPath>bin\Release</OutputPath>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<OutputPath>$(DalamudDevPlugins)</OutputPath>
 	</PropertyGroup>
-	
+
     <ItemGroup>
         <Reference Include="Dalamud">
             <Private>false</Private>
